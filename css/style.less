@@ -1,0 +1,80 @@
+body{
+  background: #cccccc;
+}
+
+.banner{
+  height: 1000px;
+  background: url('../images/banner_background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav{
+    
+  a{
+    color: white;
+  }
+  &_logo{
+    a {
+      font-size: 20px;
+      font-family: 'Roboto';
+      font-weight: bold;
+    }
+    display: inline;
+    margin: 0 550px 0 0;
+    padding: 0;
+  }
+  &_menu {
+    display: inline-flex;
+    li{
+      a{
+        padding-bottom: 10px;
+      }
+      a:hover{
+        border-bottom: solid 2px #fce38a;
+        color: #fce38a;
+      }
+      padding: 0 25px;
+    }
+  }
+}
+
+.header_content{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+
+  &__header{
+    font-size: 50px;
+    margin-top: 160px;
+    font-family: 'Kaushan Script';
+    font-style: italic;
+    font-weight: 300;
+  }
+  &__middle{
+    width: 810px;
+    margin: 0 auto;
+
+    div{
+      font-size: 120px;
+      margin: 35px;
+      font-family: 'Roboto';
+      line-height: 125px;
+    }
+  }
+  &__bottom{
+    font-size: 105px;
+    font-weight: normal;
+    margin: 70px 0 50px;
+    line-height: 50px;
+  }
+  button{
+    border: solid white 3px;
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 30px;
+    &:hover{
+      background: #F8AF83;
+    }
+  }
+}
