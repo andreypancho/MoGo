@@ -1,5 +1,5 @@
 body{
-  background: #cccccc;
+  
 }
 
 .banner{
@@ -63,11 +63,11 @@ body{
       line-height: 125px;
     }
   }
-  &__bottom{
-    font-size: 105px;
-    font-weight: normal;
-    margin: 70px 0 50px;
-    line-height: 50px;
+  &__border{
+    margin: 70px auto 50px;
+    width: 60px;
+    height: 2px;
+    border-bottom: 3px solid white;
   }
   button{
     border: solid white 3px;
@@ -77,4 +77,84 @@ body{
       background: #F8AF83;
     }
   }
+}
+
+.about{
+  height: 750px;
+  padding: 10px;
+  text-align: center;
+  &_header_text{
+    font-size: 20px;
+    margin-top: 80px;
+    font-family: 'Kaushan Script';
+  }
+
+  &_middle_text{
+    font-size: 30px;
+    font-family: 'Roboto';
+    font-weight: bold;
+  }
+
+  &_text{
+    color: #bdbdbd;
+    margin-bottom: 90px; 
+  }
+
+  &_border{
+    width: 55px;
+    height: 2px;
+    border-bottom: 3px solid red;
+    margin: 40px auto;
+  }
+
+  &_gallery{
+    display: flex;
+    justify-content: space-between;
+
+    &__item{
+      img:hover{
+        box-shadow: 10px 10px 0  #95e1d3;
+        transform: translateX(-10px) translateY(-10px);
+      }
+    }
+  }
+}
+
+.facts_back{
+  background: #95e1d3;
+}
+
+.facts{ 
+    text-align: center;
+    height: 270px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto';
+
+    &_contain{
+      width: 20%;
+      border-left: solid white 1px;
+      height: 100%;
+      display: block;
+      
+      &:last-child{
+        border-right: solid white 1px;
+      }
+    }
+    &_numb{
+      font-size: 50px;
+      margin-top: 90px;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+    &_item{
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
 }
